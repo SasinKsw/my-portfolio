@@ -1,106 +1,96 @@
-/* พื้นหลังเทาอ่อนทันสมัย */
-body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #1e293b, #0f172a);
-  color: #e2e8f0;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio — Sasin Kitsawas</title>
+  <link rel="stylesheet" href="style.css" />
 
-/* จัดหน้าให้อยู่ตรงกลางทั้งหมด */
-.container {
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
 
-/* HERO SECTION */
-header.hero {
-  text-align: center;
-  padding: 3rem 1rem 1rem; /* ลดช่องว่างด้านล่าง */
-}
+<body>
 
-header.hero h1, header.hero h2 {
-  margin: 0.5rem 0;
-}
+  <!-- HERO -->
+  <header class="hero">
+    <img src="images/S__42229821.jpg" class="profile-pic" />
+    <div class="hero-text">
+      <h1>PORTFOLIO — Sasin Kitsawas (Sin)</h1>
+      <h2>Automation Engineer • SCADA/PLC Developer</h2>
+    </div>
+  </header>
 
-/* รูปโปรไฟล์ */
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #38bdf8;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem; /* ลดจากเดิมที่สูงเกิน */
-}
+  <!-- MAIN CONTAINER -->
+  <div class="container">
 
-/* Section Box */
-section {
-  border-left: 3px solid #0ea5e9;
-  background: #1e293b;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
-  padding: 1.8rem;
-  border-radius: 10px;
+    <section class="about">
+      <h3>🙋‍♂️ ประวัติส่วนตัว</h3>
+      <p>
+        มีประสบการณ์ด้านระบบอัตโนมัติมากกว่า 4 ปี เชี่ยวชาญงาน SCADA, PLC,
+        IoT รวมถึงระบบ Smart Factory แบบครบวงจร
+      </p>
+    </section>
 
-  /* ทำให้ทุกกล่อง align กลางทั้งหมด */
-  text-align: left; 
-}
+    <section id="education">
+      <h3>🎓 การศึกษา</h3>
+      <ul>
+        <li>ปวส. ไฟฟ้ากำลัง — วิทยาลัยเทคนิคสัตหีบ</li>
+        <li>ปริญญาตรี วิศวกรรมการวัดคุม — สจล.</li>
+        <li>ปริญญาโท System Engineering — มทส.</li>
+      </ul>
+    </section>
 
-/* หัวข้อ */
-h1, h2, h3 {
-  font-family: 'Orbitron', sans-serif;
-  color: #38bdf8;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
-}
+    <section id="work-experience">
+      <h3>🧰 ประวัติการทำงาน</h3>
+      <ul>
+        <li>System Engineer — Riveplus</li>
+        <li>Project Engineer Automation — BJC</li>
+        <li>Automation Engineer — Expert Automation</li>
+      </ul>
+    </section>
 
-p, li {
-  font-size: 1rem;
-}
+    <section class="skills">
+      <h3>⚙️ Technical Skills</h3>
+      <ul>
+        <li>PLC Programming: Omron, Siemens, Mitsubishi</li>
+        <li>SCADA/InTouch, Node-RED</li>
+        <li>Modbus, OPC UA, MQTT</li>
+      </ul>
+    </section>
 
-/* Project Card */
-.project-card {
-  text-align: center;
-}
+    <section class="tools">
+      <h3>🛠️ Tools & Software</h3>
+      <ul>
+        <li>VS Code, GitHub, AutoCAD</li>
+        <li>SQL Server / InSQL</li>
+      </ul>
+    </section>
 
-.project-card img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
+    <section id="projects">
+      <h3>📁 Projects</h3>
+      <ul>
+        <li>Smart Factory SCADA Dashboard</li>
+        <li>Packaging Line Control</li>
+        <li>IoT Monitoring System (MQTT + Node-RED)</li>
+      </ul>
+    </section>
 
-/* Skills list */
-.skills-list {
-  list-style: square;
-  padding-left: 1.5rem;
-}
+    <section class="cert">
+      <h3>📜 Certifications</h3>
+      <ul>
+        <li>Omron PLC Training</li>
+        <li>Siemens TIA Programming</li>
+        <li>SCADA InTouch Developer</li>
+      </ul>
+    </section>
 
-/* Contact Button */
-.btn {
-  display: inline-block;
-  background: linear-gradient(90deg, #0ea5e9, #3b82f6);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  margin-top: 1rem;
-  box-shadow: 0 0 10px #38bdf8;
-  transition: transform 0.2s;
-}
-.btn:hover {
-  transform: scale(1.05);
-}
+  </div>
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: #94a3b8;
-}
+  <footer>
+    <h3>📞 ติดต่อ</h3>
+    <p>Email: workforengineering@email.com</p>
+    <p>Tel: 064-713-5444</p>
+  </footer>
+
+</body>
+</html>
