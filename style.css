@@ -1,129 +1,70 @@
-/* พื้นหลังธีมเดิม */
+/* Layout พื้นหลังหลัก */
 body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #1e293b, #0f172a);
   color: #e2e8f0;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
 }
 
-/* กำหนดกรอบกลางทั้งหน้า */
-.container {
-  max-width: 950px;
-  margin: auto;
-  padding: 1.5rem;
-}
-
-/* Navbar */
-nav {
-  background-color: #007acc;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-}
-
-nav ul {
-  list-style: none;
+/* HERO SECTION — รูปซ้าย ข้อความขวา */
+.hero {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Hero Section */
-header {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 3rem 1rem 2rem 1rem; /* ลด padding ล่าง */
-  min-height: 50vh;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
 }
 
 .profile-pic {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 12px;
   object-fit: cover;
   border: 3px solid #38bdf8;
-  margin-bottom: 0.8rem; /* ลดช่องว่างใต้รูป */
+  margin: 0;
 }
 
-header h1 {
-  margin-top: 0.3rem;
-  margin-bottom: 0.2rem;
-}
-
-header p {
-  margin-top: 0;
-  font-size: 1.1rem;
-  color: #cbd5e1;
-}
-
-/* Section */
-section {
-  background: #1e293b;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 10px;
-  border-left: 3px solid #0ea5e9;
-  margin: 2rem 0;
-}
-
-section h2 {
+.hero-text h1 {
+  margin: 0;
   font-family: 'Orbitron', sans-serif;
   color: #38bdf8;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 0;
-  margin-bottom: 1rem;
+}
+.hero-text h2 {
+  margin-top: 0.4rem;
+  font-weight: 400;
+  color: #94a3b8;
 }
 
-/* รายการ */
-ul {
-  padding-left: 1.2rem;
+/* CONTAINER สำหรับเนื้อหา */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem 2rem;
 }
 
-li {
-  margin-bottom: 0.6rem;
-}
-
-/* Project card */
-.project-card img {
-  width: 100%;
-  max-width: 420px;
+/* Section กล่องสวยซ้าย */
+section {
+  background: #1e293b;
+  border-left: 4px solid #0ea5e9;
+  padding: 1.5rem 1.5rem;
+  margin: 1.5rem 0;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Contact button */
-.btn {
-  display: inline-block;
-  background: linear-gradient(90deg, #0ea5e9, #3b82f6);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  margin-top: 1rem;
-  box-shadow: 0 0 10px #38bdf8;
-  transition: 0.2s;
-}
-.btn:hover {
-  transform: scale(1.05);
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #38bdf8;
+  margin-top: 0;
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 1rem;
-  color: #9ca3af;
-  margin-top: 2rem;
+  text-align: left;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  color: #94a3b8;
 }
