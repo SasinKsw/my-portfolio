@@ -2,55 +2,160 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
-  <title>SEAT C&C Station</title>
+  <title>Portfolio — Sasin Kitsawas</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
 <body>
-  <header>
-    <h1>Wellcome PORTFOLIO Mr.Sasin Kitsawas(Sin) </h1>
-    <p>Automation Engineer & SCADA/PLC Developer</p>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <h1>Wellcome PORTFOLIO Mr.Sasin Kitsawas (Sin)</h1>
+    <h2>Automation Engineer & SCADA/PLC Developer</h2>
     <img src="images/S__42229821.jpg" alt="รูป Sin" class="profile-pic" />
   </header>
 
-  <section id="about">
-    <h2>ประวัติส่วนตัว</h2>
+  <!-- ABOUT -->
+  <section class="about">
+    <h3>🙋‍♂️ ประวัติส่วนตัว</h3>
     <p>
       ผมมีประสบการณ์ด้านระบบอัตโนมัติ และ SCADA มาแล้วกว่า 4 ปี
-      เชี่ยวชาญในการพัฒนาและปรับแต่งระบบโรงงานอัจฉริยะ ฟาร์มอัจฉริยะ และ IOT ต่างๆ
+      เชี่ยวชาญในการพัฒนาและปรับแต่งระบบโรงงานอัจฉริยะ ฟาร์มอัจฉริยะ และระบบ IoT ต่างๆ
     </p>
   </section>
 
+  <!-- EDUCATION -->
   <section id="education">
-    <h2>การศึกษา</h2>
+    <h3>🎓 การศึกษา</h3>
     <ul>
-      <li>ปวส. Power Electrical - วิทยาลัยเทคนิคสัตหีบ </li>
-      <li>ปริญญาตรี Instrumentation Engineering - สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง </li>
-      <li>ปริญญาโท System Engineer - มหาวิทยาลัยเทคโนโลยีสุรนารี </li>
+      <li>ปวส. สาขาไฟฟ้ากำลัง - วิทยาลัยเทคนิคสัตหีบ</li>
+      <li>ปริญญาตรี วิศวกรรมการวัดคุม (Instrumentation Engineering) - สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</li>
+      <li>ปริญญาโท System Engineering - มหาวิทยาลัยเทคโนโลยีสุรนารี</li>
     </ul>
   </section>
 
+  <!-- WORK EXPERIENCE -->
   <section id="work-experience">
-    <h2>ประวัติการทำงาน</h2>
+    <h3>🧰 ประวัติการทำงาน</h3>
     <ul>
-      <li>System Engineer, Riveplus </li>
-      <li>Project Engineer Automation, Berli Jucker Public Limited </li>
-      <li>Automation Engineer, Expert Automation </li>
+      <li><strong>System Engineer — Riveplus Company Limited</strong></li>
+      <li><strong>Project Engineer Automation — Berli Jucker Public Limited</strong></li>
+      <li><strong>Automation Engineer — Expert Automation Company Limited</strong></li>
     </ul>
   </section>
 
+  <!-- TECH SKILLS -->
+  <section class="skills">
+    <h3>⚙️ Technical Skills</h3>
+
+    <h4>PLC Programming</h4>
+    <ul>
+      <li>Omron – CX-Programmer, Sysmac Studio</li>
+      <li>Siemens – TIA Portal</li>
+      <li>Mitsubishi – GX Works / iQ-R</li>
+      <li>Ladder, ST, FBD</li>
+    </ul>
+
+    <h4>SCADA / HMI</h4>
+    <ul>
+      <li>Wonderware InTouch 2023 R2</li>
+      <li>WinCC</li>
+      <li>Wecon HMI</li>
+      <li>Node-RED Dashboard</li>
+    </ul>
+
+    <h4>Automation Hardware</h4>
+    <ul>
+      <li>Servo, VFD, Sensor, Pneumatic</li>
+    </ul>
+
+    <h4>Communication</h4>
+    <ul>
+      <li>Modbus RTU/TCP</li>
+      <li>OPC UA</li>
+      <li>Ethernet/IP</li>
+      <li>MQTT</li>
+    </ul>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="tools">
+    <h3>🛠️ Tools & Software</h3>
+    <ul>
+      <li>SQL Server / InSQL Database</li>
+      <li>AutoCAD Electrical</li>
+      <li>Visual Studio Code</li>
+      <li>Git / GitHub</li>
+      <li>Node-RED</li>
+      <li>WinSCP, PuTTY</li>
+      <li>Wireshark</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
   <section id="projects">
-    <h2>📁 Project  </h2>
-    <div class="project">
-      <h3>Smart Factory SCADA Dashboard</h3>
-      <p>ระบบแสดงผลแบบเรียลไทม์ด้วย Scada + PLC Omron</p>
+    <h3>📁 Projects</h3>
+
+    <!-- Original Project -->
+    <div class="project-card">
+      <h4>Smart Factory SCADA Dashboard</h4>
+      <p>ระบบแสดงผลแบบเรียลไทม์ด้วย SCADA + PLC Omron</p>
+    </div>
+
+    <!-- More Projects -->
+    <div class="project-card">
+      <h4>Automatic Packaging Line</h4>
+      <p>ควบคุมระบบสายพาน + Servo + Sensor พร้อมเชื่อมต่อ Modbus TCP</p>
+    </div>
+
+    <div class="project-card">
+      <h4>IoT Monitoring System (MQTT)</h4>
+      <p>สร้าง Dashboard แบบเรียลไทม์ด้วย Node-RED และอุปกรณ์ IoT</p>
     </div>
   </section>
 
+  <!-- CERTIFICATIONS -->
+  <section class="cert">
+    <h3>📜 Certifications</h3>
+    <ul>
+      <li>Omron PLC Training – Beginner/Advance</li>
+      <li>Siemens TIA Programming</li>
+      <li>SCADA InTouch Developer</li>
+      <li>Industrial Networking (ถ้ามี)</li>
+    </ul>
+  </section>
+
+  <!-- AWARDS -->
+  <section class="awards">
+    <h3>🏆 Awards</h3>
+    <ul>
+      <li>ผลงานโครงการตัวอย่างที่สร้างประโยชน์ให้กับองค์กร</li>
+      <li>รางวัลหรือความสำเร็จที่ต้องการระบุ</li>
+    </ul>
+  </section>
+
+  <!-- SOFT SKILLS -->
+  <section class="softskills">
+    <h3>💡 Soft Skills</h3>
+    <ul>
+      <li>Teamwork</li>
+      <li>Problem Solving</li>
+      <li>Documentation</li>
+      <li>Project Planning</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
   <footer>
-    <p>📧 ติดต่อ: workforengineering@email.com</p>
-    <P>Tel: 0647135444 </P>
+    <h3>📞 ติดต่อ</h3>
+    <p>📧 Email: workforengineering@email.com</p>
+    <p>📱 Tel: 064-713-5444</p>
+    <p>YouTube Channel (ช่องใหม่): ใส่ลิงก์ที่นี่</p>
+    <p>Facebook Page: SEAT Foteca Station</p>
   </footer>
+
 </body>
 </html>
