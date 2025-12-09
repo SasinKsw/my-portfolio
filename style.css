@@ -1,4 +1,4 @@
-/* พื้นหลังเทาอ่อนทันสมัย */
+/* พื้นหลังธีมเดิม */
 body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #1e293b, #0f172a);
@@ -8,11 +8,19 @@ body {
   line-height: 1.6;
 }
 
+/* กำหนดกรอบกลางทั้งหน้า */
+.container {
+  max-width: 950px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
 /* Navbar */
 nav {
   background-color: #007acc;
   padding: 1rem;
   text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 nav ul {
@@ -31,66 +39,72 @@ nav a {
 }
 
 /* Hero Section */
-#hero {
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  padding: 4rem 1rem;
-  min-height: 60vh;
+  padding: 3rem 1rem 2rem 1rem; /* ลด padding ล่าง */
+  min-height: 50vh;
 }
 
 .profile-pic {
   width: 150px;
   height: 150px;
-  object-fit: cover;
   border-radius: 50%;
+  object-fit: cover;
   border: 3px solid #38bdf8;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem; /* ลดช่องว่างใต้รูป */
 }
 
-/* Section Styling */
+header h1 {
+  margin-top: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+
+header p {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #cbd5e1;
+}
+
+/* Section */
 section {
-  border-left: 3px solid #0ea5e9;
   background: #1e293b;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 10px;
+  border-left: 3px solid #0ea5e9;
+  margin: 2rem 0;
 }
 
-
-h1, h2, h3 {
+section h2 {
   font-family: 'Orbitron', sans-serif;
   color: #38bdf8;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-p, li {
-  font-size: 1rem;
+/* รายการ */
+ul {
+  padding-left: 1.2rem;
 }
 
-/* Project Card */
-.project-card {
-  text-align: center;
+li {
+  margin-bottom: 0.6rem;
 }
 
+/* Project card */
 .project-card img {
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
-/* Skills */
-.skills-list {
-  list-style-type: square;
-  padding-left: 1.5rem;
-  color: #444;
-}
-
-/* Contact Button */
+/* Contact button */
 .btn {
   display: inline-block;
   background: linear-gradient(90deg, #0ea5e9, #3b82f6);
@@ -100,36 +114,16 @@ p, li {
   text-decoration: none;
   margin-top: 1rem;
   box-shadow: 0 0 10px #38bdf8;
-  transition: transform 0.2s;
+  transition: 0.2s;
 }
 .btn:hover {
   transform: scale(1.05);
 }
 
-
 /* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  color: #777;
-}
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;     /* จัดแนวนอนให้กลาง */
-  justify-content: center; /* จัดแนวตั้ง */
-  text-align: center;
-  padding: 4rem 1rem;
-  min-height: 60vh;
-}
-
-/* รูปโปรไฟล์ */
-.profile-pic {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #38bdf8;
-  margin-top: 1.0rem;
-  margin-bottom: 0.5rem; /* ปรับลดช่องวาง */
+  color: #9ca3af;
+  margin-top: 2rem;
 }
