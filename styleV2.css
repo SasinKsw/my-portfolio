@@ -1,104 +1,116 @@
-/* Reset */
+/* RESET */
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
     box-sizing: border-box;
+    width: 100%;
 }
 
-/* Layout Full Width */
+/* GLOBAL LAYOUT */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     background: #f5f5f5;
     width: 100%;
+    line-height: 1.6;
 }
 
-/* ทำให้ทุก section เต็มหน้าจอ */
+/* SECTIONS */
 section {
     width: 100%;
-    padding: 60px 40px;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* MAIN CONTENT WRAPPER */
+.container {
+    width: 100%;
+    max-width: 1000px;   /* <<< ความกว้างพอดีสาย Portfolio */
+    margin: 0 auto;      /* <<< จัดให้อยู่กลาง */
+    padding: 20px;
+}
+
+/* HERO SECTION */
+.hero {
+    width: 100%;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+    padding: 120px 40px 60px;
+    text-align: left;
     box-sizing: border-box;
 }
 
-/* Container แบบเต็มจอ */
-.container {
-    width: 100%;
+/* HERO TEXT */
+.hero h1 {
+    font-size: 2.2rem;
+    margin: 0 0 10px;
+}
+
+.hero h2 {
+    font-size: 1.3rem;
+    margin: 0 0 20px;
+    font-weight: 400;
+}
+
+/* PROFILE PICTURE */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #38bdf8;
+    margin-top: 10px;
+}
+
+/* AUTO SCALE IMAGES */
+img {
     max-width: 100%;
-    margin: 0;
+    display: block;
+    border-radius: 10px;
+}
+
+/* FIX HEADER BAR (ไม่ทับ hero) */
+header {
+    position: static !important;
+    background: none !important;
     padding: 0;
 }
 
-/* ข้อความ/เนื้อหาชิดซ้ายแบบที่คุณต้องการ */
-.content {
-    max-width: 1200px;     /* จำกัดเฉพาะเนื้อหา ไม่กระจายกว้างเกิน */
-    margin-left: 0;         /* ชิดซ้าย */
-    padding-left: 40px;     /* ระยะภายในดูดี */
-}
+/* ----------------------------- */
+/* ⭐ MOBILE RESPONSIVE FIX ⭐ */
+/* ----------------------------- */
 
-/* Hero Section ให้เต็ม 100% */
-.hero {
-    width: 100%;
-    background: #005cb4;
-    color: #fff;
-    padding: 120px 40px;
-    box-sizing: border-box;
-}
-
-/* Header Bar */
-header {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start; /* อยู่ซ้าย */
-    padding: 20px 40px;
-    background: #ffffffcc;
-    backdrop-filter: blur(6px);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-}
-
-/* ปรับรูปภาพไม่ให้โดด */
-img {
-    max-width: 100%;
-    border-radius: 12px;
-}
-/* ---- MOBILE FIX ---- */
 @media (max-width: 600px) {
 
-  /* ลดขนาด hero section */
-  .hero {
-    padding: 2rem 1rem;
-  }
+    /* HERO MOBILE */
+    .hero {
+        padding: 80px 20px 40px;
+        text-align: center;
+    }
 
-  /* ลดขนาดรูปโปรไฟล์เฉพาะมือถือ */
-  .profile-pic {
-    width: 120px;
-    height: 120px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
+    .hero h1 {
+        font-size: 1.6rem;
+    }
 
-  /* ลดขนาดตัวหนังสือ hero */
-  .hero h1 {
-    font-size: 1.4rem;
-  }
+    .hero h2 {
+        font-size: 1rem;
+    }
 
-  .hero h2 {
-    font-size: 1rem;
-  }
+    .profile-pic {
+        width: 110px;
+        height: 110px;
+        margin-top: 10px;
+    }
 
-  /* ลดความกว้าง container ให้สบายตา */
-  .container {
-    width: 100%;
-    padding: 0 1rem;
-  }
+    /* เนื้อหาอ่านง่าย */
+    .container {
+        padding: 10px;
+    }
 
-  /* section ให้ชิดซ้ายอย่างพอดี */
-  section {
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
+    section {
+        padding: 20px;
+        margin-bottom: 16px;
+    }
 }
-
